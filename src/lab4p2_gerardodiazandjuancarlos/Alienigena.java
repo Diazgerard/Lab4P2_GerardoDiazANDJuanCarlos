@@ -9,7 +9,7 @@ package lab4p2_gerardodiazandjuancarlos;
  *
  * @author gerar
  */
-public class Alienigena extends Personaje{ 
+public class Alienigena extends Villanos{ 
 
     public Alienigena() {
         super();

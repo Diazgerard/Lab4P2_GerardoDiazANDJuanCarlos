@@ -5,6 +5,8 @@
  */
 package lab4p2_gerardodiazandjuancarlos;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author gerar

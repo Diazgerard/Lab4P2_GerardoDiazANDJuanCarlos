@@ -60,7 +60,7 @@ public class Villanos {
 
     @Override
     public String toString() {
-        return "Personaje{" + "nombre=" + nombre + ", ataque=" + ataque + ", vida=" + vida + ", universo=" + universo + '}';
+        return "villanos{" + "nombre=" + nombre + ", ataque=" + ataque + ", vida=" + vida + ", universo=" + universo + '}';
     }
 
 }

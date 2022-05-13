@@ -20,7 +20,6 @@ public class Lab4P2_GerardoDiazANDJuanCarlos {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Personaje p = new Personaje();
         SpidermanPunk SP = new SpidermanPunk();
         SuperiorSpiderman SS = new SuperiorSpiderman();
         ClasicoSpiderman CS = new ClasicoSpiderman();

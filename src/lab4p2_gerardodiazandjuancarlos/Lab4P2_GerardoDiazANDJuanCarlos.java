@@ -162,7 +162,7 @@ public class Lab4P2_GerardoDiazANDJuanCarlos {
 
                 }
                 break;
-                case 4:{
+                case 4: {
                     int opc = 0;
 
                     while (opc != 6) {
@@ -178,37 +178,48 @@ public class Lab4P2_GerardoDiazANDJuanCarlos {
                         System.out.println("-------------------------------");
                         switch (opc) {
                             case 1: {
+                                System.out.println("Ingrese la posicion que desea");
+                                int psi = lea.nextInt();
+                                System.out.println("Ingrese el nuevo nombre");
+                                String nombre = lea.next();
+                                villanos.remove(psi);
+                                villanos.set(psi, new Blindado(nombre,200.0,2500.0,"Universo 980"));
+                            }
+                            break;
+                            case 2: {
+                                System.out.println("Ingrese la posicion que desea");
+                                int pos = lea.nextInt();
+                                System.out.println("Ingrese el nuevo puntos de ataque");
+                                double xd = lea.nextDouble();
+                                villanos.remove(pos);
+                                villanos.set(pos, new Blindado("Rihno",xd,2500.0,"Universo 980" ));
                                 
                             }
                             break;
-                            case 2:{
-                                
+                            case 3: {
+
                             }
                             break;
-                            case 3:{
-                               
+                            case 4: {
+
                             }
                             break;
-                            case 4:{
-                                
-                            }
-                            break;
-                            case 5:{
-                                
+                            case 5: {
+
                             }
                             break;
                         }
                     }
-                    
+
                 }
                 break;
-                case 5:{
-                    
+                case 5: {
+
                 }
                 break;
-                        
+
             }
         }
     }
-    
+
 }

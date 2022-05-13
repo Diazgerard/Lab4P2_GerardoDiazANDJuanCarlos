@@ -197,15 +197,36 @@ public class Lab4P2_GerardoDiazANDJuanCarlos {
                             }
                             break;
                             case 3: {
-
+                                System.out.println("Ingrese la posicion que desea");
+                                int pos = lea.nextInt();
+                                System.out.println("Ingrese los nuevos puntos de vida");
+                                double vida = lea.nextDouble();
+                                villanos.remove(pos);
+                                villanos.set(pos, new Blindado("Rihno",150.0,vida,"Universo 980" ));
                             }
                             break;
                             case 4: {
-
+                                System.out.println("Ingrese la posicion");
+                                int opcion = lea.nextInt();
+                                System.out.println("Ingrese el nueva universo del personaje");
+                                String x = lea.next();
+                                villanos.remove(opcion);
+                                villanos.set(opcion, new Blindado("MESSI", 150.0, 150.0, x));
                             }
                             break;
                             case 5: {
-
+                               System.out.println("Ingrese la posicion");
+                                int opcion = lea.nextInt();
+                                System.out.println("Ingrese el nuevo nombre");
+                                String n = lea.next();
+                                System.out.println("Ingrese el nuevo punto de ataque");
+                                double x = lea.nextDouble();
+                                System.out.println("Ingrese el nueva vida del personaje");
+                                double x1 = lea.nextDouble();
+                                System.out.println("Ingrese el nueva universo del personaje");
+                                String x2 = lea.next();
+                                villanos.remove(opcion);
+                                villanos.set(opcion, new Blindado(n, x, x1, x2));
                             }
                             break;
                         }

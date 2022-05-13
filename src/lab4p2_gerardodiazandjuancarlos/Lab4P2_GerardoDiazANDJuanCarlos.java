@@ -109,11 +109,34 @@ public class Lab4P2_GerardoDiazANDJuanCarlos {
                                 System.out.println("Ingrese el nuevo nombre");
                                 String n = lea.next();
                                 personaje.remove(opcion);
-                                personaje.set(opcion, new SpidermanPunk(n, 150.0, 1500.0, "ARGENTINA"));
-                                SP.setNombre(n);
+                                if (opcion == 0) {
+                                    personaje.set(opcion, new SpidermanPunk(n, 150.0, 1500.0, "ARGENTINA"));
+                                } else if (opcion == 1) {
+                                   personaje.set(opcion, new SuperiorSpiderman(n, 180.0, 1700.0, "UNO"));
+                                }else{
+                                    if (opcion == 2){
+                                        personaje.set(opcion, new ClasicoSpiderman(n, 200.0, 2100.0, "ESPEJO"));
+                                    } else {
+                                        if (opcion == 3) {
+                                            personaje.set(opcion, new SpidermanPunk(n, 201.0, 2500.0, "MADRID"));
+                                        } else {
+                                            if (opcion == 4) {
+                                            } else {
+                                                if (opcion == 5) {
+                                                    personaje.set(opcion, new ClasicoSpiderman(n, 200.0, 2100.0, "ESPEJO"));
+                                                } else {
+                                                    if (opcion == 6) {
+                                                        personaje.set(opcion, new ClasicoSpiderman(n, 200.0, 2100.0, "ESPEJO"));
+                                                    } else {
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
 
                             }
-                            break;
+                                break;
                             case 2: {
                                 System.out.println("Ingrese la posicion");
                                 int opcion = lea.nextInt();

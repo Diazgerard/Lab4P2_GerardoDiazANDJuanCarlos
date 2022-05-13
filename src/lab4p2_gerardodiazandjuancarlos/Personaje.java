@@ -13,7 +13,7 @@ import java.util.ArrayList;
  */
 public class Personaje {
     
-    private String nombre;
+    private String nombre ;
     private double ataque;
     private double vida;
     private String universo;

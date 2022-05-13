@@ -25,8 +25,10 @@ public class ClasicoSpiderman extends Personaje {
         return "ClasicoSpiderman{" + super.toString() + '}';
     }
 
-    public double batalla() {
+    @Override
+    public double batalla(Personaje personaje) {
         return super.getAtaque();
+
     }
 
 }

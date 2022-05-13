@@ -9,7 +9,7 @@ package lab4p2_gerardodiazandjuancarlos;
  *
  * @author gerar
  */
-public class SpidermanPunk extends Personaje{
+public  class SpidermanPunk extends Personaje{
 
     public SpidermanPunk() {
         super();
@@ -23,10 +23,17 @@ public class SpidermanPunk extends Personaje{
     public String toString() {
         return "SpidermanPunk{" + super.toString() + '}';
     }
-    public double batalla(){
-        return super.getAtaque();
+    public double batalla(Personaje villano) {
+
+        if (villano instanceof Blindado){
+             return super.getAtaque() * 1.15;
+        }else{
+            return super.getAtaque();
+        }
+        
+       
     }
-    
+
     
     
     

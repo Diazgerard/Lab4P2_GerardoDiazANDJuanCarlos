@@ -9,7 +9,7 @@ package lab4p2_gerardodiazandjuancarlos;
  *
  * @author gerar
  */
-public class Blindado extends Villanos {
+public  class Blindado extends Personaje {
 
     public Blindado() {
         super();
@@ -24,8 +24,15 @@ public class Blindado extends Villanos {
         return "Blindado{" + super.toString() + '}';
     }
 
-    public double batalla() {
-        return super.getAtaque();
+    public double batalla(Personaje personaje) {
+        if (personaje instanceof ClasicoSpiderman){
+             return super.getAtaque() * 1.1;
+        }
+        else{
+            return super.getAtaque();
+        }
+        
     }
 
+  
 }

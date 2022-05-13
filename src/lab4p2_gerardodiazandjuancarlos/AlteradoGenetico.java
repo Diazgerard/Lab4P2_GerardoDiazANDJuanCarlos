@@ -25,8 +25,13 @@ public class AlteradoGenetico extends Villanos {
         return "AlteradoGenetico{" + super.toString() + '}';
     }
 
-    public double batalla() {
-        return super.getAtaque();
+    public double batalla(Personaje personaje) {
+         if (personaje instanceof SpidermanPunk){
+             return super.getAtaque() * 1.1;
+        }
+        else{
+            return super.getAtaque();
+        }
     }
 
 }

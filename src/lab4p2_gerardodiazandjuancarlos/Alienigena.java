@@ -9,7 +9,7 @@ package lab4p2_gerardodiazandjuancarlos;
  *
  * @author gerar
  */
-public class Alienigena extends Villanos {
+public  class Alienigena extends Villanos {
 
     public Alienigena() {
         super();
@@ -24,8 +24,10 @@ public class Alienigena extends Villanos {
         return "Alienigena{" + super.toString() + '}';
     }
 
-    public double batalla() {
-        return super.getAtaque();
+    public double batalla(Personaje personaje) {
+       
+             return super.getAtaque() * 1.3;
+            
     }
 
 }

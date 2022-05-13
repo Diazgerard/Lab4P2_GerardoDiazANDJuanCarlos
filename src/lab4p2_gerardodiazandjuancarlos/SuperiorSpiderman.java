@@ -5,11 +5,13 @@
  */
 package lab4p2_gerardodiazandjuancarlos;
 
+import java.util.Random;
+
 /**
  *
  * @author gerar
  */
-public class SuperiorSpiderman extends Personaje {
+public  class SuperiorSpiderman extends Personaje {
 
     public SuperiorSpiderman() {
         super();
@@ -24,8 +26,11 @@ public class SuperiorSpiderman extends Personaje {
         return "SuperiorSpiderman{" + super.toString() + '}';
     }
 
-    public double batalla() {
-        return super.getAtaque();
+    public double batalla(Personaje villano) {
+        Random random = new Random();
+        int value = random.nextInt(30+10)+ 10;
+        double porcentaje = value/100 +1; 
+        return super.getAtaque() * porcentaje;
     }
 
 }

@@ -46,7 +46,13 @@ public class Lab4P2_GerardoDiazANDJuanCarlos {
         
         ClasicoSpiderman clasico1 = new ClasicoSpiderman("PORKY", 500.0, 5000.0, "TOCINO");
         personaje.add(clasico1);
-      
+        
+        Blindado blindado = new Blindado("Rinho",200.0,2500.0,"Universo 980");
+        villanos.add(blindado);
+        Alienigena alinigena = new Alienigena("Paul",150.0,1000.0,"Desconocido");
+        villanos.add(alinigena);
+        AlteradoGenetico alte = new AlteradoGenetico("Singe",500.0,2304.0,"Universo 245");
+        villanos.add(alte);
         
         
         int opci=0;
@@ -71,7 +77,10 @@ public class Lab4P2_GerardoDiazANDJuanCarlos {
                 }
                 break;
                 case 2:{
-                    
+                    for (Villanos villa : villanos) {
+                        System.out.println(villa);
+                        
+                    }
                 }
                 break;
                 case 3:{

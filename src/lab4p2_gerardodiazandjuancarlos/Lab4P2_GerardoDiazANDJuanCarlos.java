@@ -6,6 +6,7 @@
 package lab4p2_gerardodiazandjuancarlos;
 
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /**
@@ -104,32 +105,179 @@ public class Lab4P2_GerardoDiazANDJuanCarlos {
                         System.out.println("-------------------------------");
                         switch (opc) {
                             case 1: {
-                                System.out.println("Ingrese posicion");
-                                int opcion = lea.nextInt();
-                                System.out.println("Ingrese el nuevo nombre");
-                                String n = lea.next();
-                                personaje.remove(opcion);
-                                personaje.set(opcion, new SpidermanPunk(n, 150.0, 1500.0, "ARGENTINA"));
-                                SP.setNombre(n);
+                                boolean flag = true;
+
+                                while (flag) {
+                                    try {
+                                        System.out.println("Ingrese posicion");
+                                        int opcion = lea.nextInt();
+                                        System.out.println("Ingrese el nuevo nombre");
+                                        String n = lea.next();
+                                        personaje.remove(opcion);
+                                        if (opcion == 0) {
+                                            personaje.set(opcion, new SpidermanPunk(n, 150.0, 1500.0, "ARGENTINA"));
+                                        } else if (opcion == 1) {
+                                            personaje.set(opcion, new SuperiorSpiderman(n, 180.0, 1700.0, "UNO"));
+                                        } else {
+                                            if (opcion == 2) {
+                                                personaje.set(opcion, new ClasicoSpiderman(n, 200.0, 2100.0, "ESPEJO"));
+                                            } else {
+                                                if (opcion == 3) {
+                                                    personaje.set(opcion, new SpidermanPunk(n, 201.0, 2500.0, "MADRID"));
+                                                } else {
+                                                    if (opcion == 4) {
+                                                    } else {
+                                                        if (opcion == 5) {
+                                                            personaje.set(opcion, new ClasicoSpiderman(n, 200.0, 2100.0, "ESPEJO"));
+                                                        } else {
+                                                            if (opcion == 6) {
+                                                                personaje.set(opcion, new ClasicoSpiderman(n, 200.0, 2100.0, "ESPEJO"));
+                                                            } else {
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        flag = false;
+
+                                    } catch (ArithmeticException e) {
+
+                                        System.out.println("algo raro ocurrio");
+
+                                    } catch (ArrayIndexOutOfBoundsException e) {
+
+                                        System.out.println("Problemas con el arreglo");
+
+                                    } catch (InputMismatchException e) {
+
+                                        System.out.println("NAO NAO");
+                                    } catch (Exception e) {
+
+                                        System.out.println("Error");
+                                        e.printStackTrace();// imprime la traza del error
+                                    }
+
+                                    
+                                }
 
                             }
                             break;
                             case 2: {
-                                System.out.println("Ingrese la posicion");
+                                boolean flag = true;
+
+                                while (flag) {
+                                    try {
+                                         System.out.println("Ingrese la posicion");
                                 int opcion = lea.nextInt();
                                 System.out.println("Ingrese el nuevo punto de ataque");
                                 double x = lea.nextDouble();
                                 personaje.remove(opcion);
-                                personaje.set(opcion, new SpidermanPunk("MESSI", x, 1500.0, "ARGENTINA"));
+                                if (opcion == 0) {
+                                    personaje.set(opcion, new SpidermanPunk("MESSI", x, 1500.0, "ARGENTINA"));
+                                } else if (opcion == 1) {
+                                   personaje.set(opcion, new SuperiorSpiderman("PETER", x, 1700.0, "UNO"));
+                                }else{
+                                    if (opcion == 2){
+                                        personaje.set(opcion, new ClasicoSpiderman("MILES", x, 2100.0, "ESPEJO"));
+                                    } else {
+                                        if (opcion == 3) {
+                                            personaje.set(opcion, new SpidermanPunk("MILES", x, 2500.0, "MADRID"));
+                                        } else {
+                                            if (opcion == 4) {
+                                            } else {
+                                                if (opcion == 5) {
+                                                    personaje.set(opcion, new ClasicoSpiderman("GWEN", x, 2100.0, "ESPEJO"));
+                                                } else {
+                                                    if (opcion == 6) {
+                                                        personaje.set(opcion, new ClasicoSpiderman("PORKY", x, 2100.0, "ESPEJO"));
+                                                    } else {
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                        flag = false;
+
+                                    } catch (ArithmeticException e) {
+
+                                        System.out.println("algo raro ocurrio");
+
+                                    } catch (ArrayIndexOutOfBoundsException e) {
+
+                                        System.out.println("Problemas con el arreglo");
+
+                                    } catch (InputMismatchException e) {
+
+                                        System.out.println("NAO NAO");
+                                    } catch (Exception e) {
+
+                                        System.out.println("Error");
+                                        e.printStackTrace();// imprime la traza del error
+                                    }
+                                }
+                               
+                                
                             }
                             break;
                             case 3: {
-                                System.out.println("Ingrese la posicion");
+                                boolean flag = true;
+
+                                while (flag) {
+                                    try {
+                                        System.out.println("Ingrese la posicion");
                                 int opcion = lea.nextInt();
-                                System.out.println("Ingrese el nueva vida del personaje");
+                                System.out.println("Ingrese el nuevo punto de vida");
                                 double x = lea.nextDouble();
                                 personaje.remove(opcion);
-                                personaje.set(opcion, new SpidermanPunk("MESSI", 150.0, x, "ARGENTINA"));
+                                if (opcion == 0) {
+                                    personaje.set(opcion, new SpidermanPunk("MESSI", 150.0, x, "ARGENTINA"));
+                                } else if (opcion == 1) {
+                                   personaje.set(opcion, new SuperiorSpiderman("PETER", 180.0, x, "UNO"));
+                                }else{
+                                    if (opcion == 2){
+                                        personaje.set(opcion, new ClasicoSpiderman("MILES", 300.0, x, "ESPEJO"));
+                                    } else {
+                                        if (opcion == 3) {
+                                            personaje.set(opcion, new SpidermanPunk("MILES", 500.0, x, "MADRID"));
+                                        } else {
+                                            if (opcion == 4) {
+                                            } else {
+                                                if (opcion == 5) {
+                                                    personaje.set(opcion, new ClasicoSpiderman("GWEN", 400.0, x, "ESPEJO"));
+                                                } else {
+                                                    if (opcion == 6) {
+                                                        personaje.set(opcion, new ClasicoSpiderman("PORKY", 350.0, x, "ESPEJO"));
+                                                    } else {
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                        flag = false;
+
+                                    } catch (ArithmeticException e) {
+
+                                        System.out.println("algo raro ocurrio");
+
+                                    } catch (ArrayIndexOutOfBoundsException e) {
+
+                                        System.out.println("Problemas con el arreglo");
+
+                                    } catch (InputMismatchException e) {
+
+                                        System.out.println("NAO NAO");
+                                    } catch (Exception e) {
+
+                                        System.out.println("Error");
+                                        e.printStackTrace();// imprime la traza del error
+                                    }
+
+                                    System.out.println("LLego al final");
+                                }
+                                
                             }
                             break;
                             case 4: {
@@ -235,6 +383,11 @@ public class Lab4P2_GerardoDiazANDJuanCarlos {
                 }
                 break;
                 case 5: {
+                    for (int i = 0; i < personaje.size(); i++) {
+                        
+                        
+                    }
+                    
                     
 
                 }

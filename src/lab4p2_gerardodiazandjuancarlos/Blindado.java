@@ -9,7 +9,7 @@ package lab4p2_gerardodiazandjuancarlos;
  *
  * @author gerar
  */
-public  class Blindado extends Personaje {
+public  class Blindado extends Villanos {
 
     public Blindado() {
         super();

@@ -60,9 +60,8 @@ public class Lab4P2_GerardoDiazANDJuanCarlos {
         AlteradoGenetico alte1 = new AlteradoGenetico("Carnage", 500.0, 2304.0, "Universo 300");
         villanos.add(alte1);
 
-        
-        int opci=0;
-        while(opci!=6){
+             int opci = 0;
+        while (opci != 6) {
             System.out.println("-------------------------------");
             System.out.println("1) Listar Spidermans");
             System.out.println("2) Listar Enemigos");
@@ -73,23 +72,23 @@ public class Lab4P2_GerardoDiazANDJuanCarlos {
             System.out.print("Ingrese una opcion: ");
             opci = lea.nextInt();
             System.out.println("-------------------------------");
-            switch(opci){
-                case 1:{
+            switch (opci) {
+                case 1: {
                     for (Personaje personaje1 : personaje) {
                         System.out.println(personaje1);
-                        
+
                     }
-                
+
                 }
                 break;
-                case 2:{
+                case 2: {
                     for (Villanos villa : villanos) {
                         System.out.println(villa);
-                        
+
                     }
                 }
                 break;
-                case 3:{
+                case 3: {
                     int opc = 0;
 
                     while (opc != 6) {
@@ -105,28 +104,62 @@ public class Lab4P2_GerardoDiazANDJuanCarlos {
                         System.out.println("-------------------------------");
                         switch (opc) {
                             case 1: {
-                                
+                                System.out.println("Ingrese posicion");
+                                int opcion = lea.nextInt();
+                                System.out.println("Ingrese el nuevo nombre");
+                                String n = lea.next();
+                                personaje.remove(opcion);
+                                personaje.set(opcion, new SpidermanPunk(n, 150.0, 1500.0, "ARGENTINA"));
+                                SP.setNombre(n);
+
                             }
                             break;
-                            case 2:{
-                                
+                            case 2: {
+                                System.out.println("Ingrese la posicion");
+                                int opcion = lea.nextInt();
+                                System.out.println("Ingrese el nuevo punto de ataque");
+                                double x = lea.nextDouble();
+                                personaje.remove(opcion);
+                                personaje.set(opcion, new SpidermanPunk("MESSI", x, 1500.0, "ARGENTINA"));
                             }
                             break;
-                            case 3:{
-                               
+                            case 3: {
+                                System.out.println("Ingrese la posicion");
+                                int opcion = lea.nextInt();
+                                System.out.println("Ingrese el nueva vida del personaje");
+                                double x = lea.nextDouble();
+                                personaje.remove(opcion);
+                                personaje.set(opcion, new SpidermanPunk("MESSI", 150.0, x, "ARGENTINA"));
                             }
                             break;
-                            case 4:{
-                                
+                            case 4: {
+                                System.out.println("Ingrese la posicion");
+                                int opcion = lea.nextInt();
+                                System.out.println("Ingrese el nueva universo del personaje");
+                                String x = lea.next();
+                                personaje.remove(opcion);
+                                personaje.set(opcion, new SpidermanPunk("MESSI", 150.0, 150.0, x));
                             }
                             break;
-                            case 5:{
+                            case 5: {
+                                System.out.println("Ingrese la posicion");
+                                int opcion = lea.nextInt();
+                                System.out.println("Ingrese el nuevo nombre");
+                                String n = lea.next();
+                                System.out.println("Ingrese el nuevo punto de ataque");
+                                double x = lea.nextDouble();
+                                System.out.println("Ingrese el nueva vida del personaje");
+                                double x1 = lea.nextDouble();
+                                System.out.println("Ingrese el nueva universo del personaje");
+                                String x2 = lea.next();
+                                personaje.remove(opcion);
+                                personaje.set(opcion, new SpidermanPunk(n, x, x1, x2));
                                 
                             }
                             break;
                         }
                     }
-                    
+
                 }
                 break;
                 case 4:{

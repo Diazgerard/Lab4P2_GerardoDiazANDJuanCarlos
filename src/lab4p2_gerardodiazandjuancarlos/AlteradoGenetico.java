@@ -9,11 +9,11 @@ package lab4p2_gerardodiazandjuancarlos;
  *
  * @author gerar
  */
-public class AlteradoGenetico extends Villanos{
+public class AlteradoGenetico extends Villanos {
 
     public AlteradoGenetico() {
         super();
-        
+
     }
 
     public AlteradoGenetico(String nombre, double ataque, double vida, String universo) {
@@ -24,9 +24,9 @@ public class AlteradoGenetico extends Villanos{
     public String toString() {
         return "AlteradoGenetico{" + super.toString() + '}';
     }
-    
-    
-    
-    
-    
+
+    public double batalla() {
+        return super.getAtaque();
+    }
+
 }

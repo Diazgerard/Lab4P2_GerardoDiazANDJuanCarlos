@@ -11,7 +11,7 @@ import java.util.ArrayList;
  *
  * @author gerar
  */
-public class Personaje {
+public abstract class Personaje {
     
     private String nombre ;
     private double ataque;
@@ -64,7 +64,7 @@ public class Personaje {
     public String toString() {
         return "Personaje{" + "nombre=" + nombre + ", ataque=" + ataque + ", vida=" + vida + ", universo=" + universo + '}';
     }
-    
-    
-    
+
+    public abstract double batalla();
+
 }

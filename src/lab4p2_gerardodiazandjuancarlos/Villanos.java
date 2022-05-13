@@ -9,7 +9,7 @@ package lab4p2_gerardodiazandjuancarlos;
  *
  * @author gerar
  */
-public class Villanos {
+public abstract class Villanos {
 
     private String nombre;
     private double ataque;
@@ -62,5 +62,5 @@ public class Villanos {
     public String toString() {
         return "villanos{" + "nombre=" + nombre + ", ataque=" + ataque + ", vida=" + vida + ", universo=" + universo + '}';
     }
-
+   public abstract double batalla();
 }

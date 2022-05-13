@@ -53,7 +53,13 @@ public class Lab4P2_GerardoDiazANDJuanCarlos {
         villanos.add(alinigena);
         AlteradoGenetico alte = new AlteradoGenetico("Singe",500.0,2304.0,"Universo 245");
         villanos.add(alte);
-        
+        Blindado blindado2 = new Blindado("Rinhoversion2.0", 200.0, 2500.0, "Universo 920");
+        villanos.add(blindado2);
+        Alienigena alinigena2 = new Alienigena("Venom", 150.0, 1000.0, "Desconocido");
+        villanos.add(alinigena2);
+        AlteradoGenetico alte1 = new AlteradoGenetico("Carnage", 500.0, 2304.0, "Universo 300");
+        villanos.add(alte1);
+
         
         int opci=0;
         while(opci!=6){

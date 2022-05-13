@@ -105,6 +105,7 @@ public class Lab4P2_GerardoDiazANDJuanCarlos {
                         System.out.println("-------------------------------");
                         switch (opc) {
                             case 1: {
+<<<<<<< HEAD
                                 boolean flag = true;
 
                                 while (flag) {
@@ -135,10 +136,37 @@ public class Lab4P2_GerardoDiazANDJuanCarlos {
                                                             } else {
                                                             }
                                                         }
+=======
+                                System.out.println("Ingrese posicion");
+                                int opcion = lea.nextInt();
+                                System.out.println("Ingrese el nuevo nombre");
+                                String n = lea.next();
+                                personaje.remove(opcion);
+                                if (opcion == 0) {
+                                    personaje.set(opcion, new SpidermanPunk(n, 150.0, 1500.0, "ARGENTINA"));
+                                } else if (opcion == 1) {
+                                   personaje.set(opcion, new SuperiorSpiderman(n, 180.0, 1700.0, "UNO"));
+                                }else{
+                                    if (opcion == 2){
+                                        personaje.set(opcion, new ClasicoSpiderman(n, 200.0, 2100.0, "ESPEJO"));
+                                    } else {
+                                        if (opcion == 3) {
+                                            personaje.set(opcion, new SpidermanPunk(n, 201.0, 2500.0, "MADRID"));
+                                        } else {
+                                            if (opcion == 4) {
+                                            } else {
+                                                if (opcion == 5) {
+                                                    personaje.set(opcion, new ClasicoSpiderman(n, 200.0, 2100.0, "ESPEJO"));
+                                                } else {
+                                                    if (opcion == 6) {
+                                                        personaje.set(opcion, new ClasicoSpiderman(n, 200.0, 2100.0, "ESPEJO"));
+                                                    } else {
+>>>>>>> 0a26b32610611397b44cd4fab907cd561904422a
                                                     }
                                                 }
                                             }
                                         }
+<<<<<<< HEAD
                                         flag = false;
 
                                     } catch (ArithmeticException e) {
@@ -159,10 +187,13 @@ public class Lab4P2_GerardoDiazANDJuanCarlos {
                                     }
 
                                     
+=======
+                                    }
+>>>>>>> 0a26b32610611397b44cd4fab907cd561904422a
                                 }
 
                             }
-                            break;
+                                break;
                             case 2: {
                                 boolean flag = true;
 

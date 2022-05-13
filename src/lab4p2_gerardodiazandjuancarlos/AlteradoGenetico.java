@@ -9,7 +9,7 @@ package lab4p2_gerardodiazandjuancarlos;
  *
  * @author gerar
  */
-public class AlteradoGenetico extends Personaje{
+public class AlteradoGenetico extends Villanos{
 
     public AlteradoGenetico() {
         super();

@@ -9,7 +9,7 @@ package lab4p2_gerardodiazandjuancarlos;
  *
  * @author gerar
  */
-public class SuperiorSpiderman extends Personaje{
+public class SuperiorSpiderman extends Personaje {
 
     public SuperiorSpiderman() {
         super();
@@ -23,7 +23,9 @@ public class SuperiorSpiderman extends Personaje{
     public String toString() {
         return "SuperiorSpiderman{" + super.toString() + '}';
     }
-    
-    
-    
+
+    public double batalla() {
+        return super.getAtaque();
+    }
+
 }

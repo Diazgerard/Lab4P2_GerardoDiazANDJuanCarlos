@@ -9,7 +9,7 @@ package lab4p2_gerardodiazandjuancarlos;
  *
  * @author gerar
  */
-public class Blindado extends Villanos{
+public class Blindado extends Villanos {
 
     public Blindado() {
         super();
@@ -23,10 +23,9 @@ public class Blindado extends Villanos{
     public String toString() {
         return "Blindado{" + super.toString() + '}';
     }
-    
-    
 
-   
-    
-    
+    public double batalla() {
+        return super.getAtaque();
+    }
+
 }

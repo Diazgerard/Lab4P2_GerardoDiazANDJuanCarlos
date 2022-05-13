@@ -23,6 +23,9 @@ public class SpidermanPunk extends Personaje{
     public String toString() {
         return "SpidermanPunk{" + super.toString() + '}';
     }
+    public double batalla(){
+        return super.getAtaque();
+    }
     
     
     

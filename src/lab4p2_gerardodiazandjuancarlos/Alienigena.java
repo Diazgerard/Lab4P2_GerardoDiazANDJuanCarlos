@@ -9,7 +9,7 @@ package lab4p2_gerardodiazandjuancarlos;
  *
  * @author gerar
  */
-public class Alienigena extends Villanos{ 
+public class Alienigena extends Villanos {
 
     public Alienigena() {
         super();
@@ -21,11 +21,11 @@ public class Alienigena extends Villanos{
 
     @Override
     public String toString() {
-        return "Alienigena{" + super.toString() +  '}';
+        return "Alienigena{" + super.toString() + '}';
     }
-    
-    
-    
-    
-    
+
+    public double batalla() {
+        return super.getAtaque();
+    }
+
 }

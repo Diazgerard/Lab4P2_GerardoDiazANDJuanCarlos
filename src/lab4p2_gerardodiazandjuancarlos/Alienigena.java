@@ -9,6 +9,23 @@ package lab4p2_gerardodiazandjuancarlos;
  *
  * @author gerar
  */
-public class Alienigena {
+public class Alienigena extends Personaje{ 
+
+    public Alienigena() {
+        super();
+    }
+
+    public Alienigena(String nombre, double ataque, double vida, String universo) {
+        super(nombre, ataque, vida, universo);
+    }
+
+    @Override
+    public String toString() {
+        return "Alienigena{" + super.toString() +  '}';
+    }
+    
+    
+    
+    
     
 }

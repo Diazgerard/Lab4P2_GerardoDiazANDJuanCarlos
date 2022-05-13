@@ -11,4 +11,58 @@ package lab4p2_gerardodiazandjuancarlos;
  */
 public class Personaje {
     
+    private String nombre;
+    private double ataque;
+    private double vida;
+    private String universo;
+
+    public Personaje() {
+    }
+
+    public Personaje(String nombre, double ataque, double vida, String universo) {
+        this.nombre = nombre;
+        this.ataque = ataque;
+        this.vida = vida;
+        this.universo = universo;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public double getAtaque() {
+        return ataque;
+    }
+
+    public void setAtaque(double ataque) {
+        this.ataque = ataque;
+    }
+
+    public double getVida() {
+        return vida;
+    }
+
+    public void setVida(double vida) {
+        this.vida = vida;
+    }
+
+    public String getUniverso() {
+        return universo;
+    }
+
+    public void setUniverso(String universo) {
+        this.universo = universo;
+    }
+
+    @Override
+    public String toString() {
+        return "Personaje{" + "nombre=" + nombre + ", ataque=" + ataque + ", vida=" + vida + ", universo=" + universo + '}';
+    }
+    
+    
+    
 }

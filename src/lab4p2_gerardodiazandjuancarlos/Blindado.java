@@ -9,6 +9,24 @@ package lab4p2_gerardodiazandjuancarlos;
  *
  * @author gerar
  */
-public class Blindado {
+public class Blindado extends Personaje{
+
+    public Blindado() {
+        super();
+    }
+
+    public Blindado(String nombre, double ataque, double vida, String universo) {
+        super(nombre, ataque, vida, universo);
+    }
+
+    @Override
+    public String toString() {
+        return "Blindado{" + super.toString() + '}';
+    }
+    
+    
+
+   
+    
     
 }

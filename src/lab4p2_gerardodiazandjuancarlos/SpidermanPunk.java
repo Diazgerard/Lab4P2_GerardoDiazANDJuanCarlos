@@ -9,6 +9,23 @@ package lab4p2_gerardodiazandjuancarlos;
  *
  * @author gerar
  */
-public class SpidermanPunk {
+public class SpidermanPunk extends Personaje{
+
+    public SpidermanPunk() {
+        super();
+    }
+
+    public SpidermanPunk(String nombre, double ataque, double vida, String universo) {
+        super(nombre, ataque, vida, universo);
+    }
+
+    @Override
+    public String toString() {
+        return "SpidermanPunk{" + super.toString() + '}';
+    }
+    
+    
+    
+    
     
 }

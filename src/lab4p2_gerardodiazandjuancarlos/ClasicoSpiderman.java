@@ -9,6 +9,22 @@ package lab4p2_gerardodiazandjuancarlos;
  *
  * @author gerar
  */
-public class ClasicoSpiderman {
+public class ClasicoSpiderman extends Personaje{
+
+    public ClasicoSpiderman() {
+        super();
+        
+    }
+
+    public ClasicoSpiderman(String nombre, double ataque, double vida, String universo) {
+        super(nombre, ataque, vida, universo);
+    }
+
+    @Override
+    public String toString() {
+        return "ClasicoSpiderman{" + super.toString() +  '}';
+    }
+   
+    
     
 }
